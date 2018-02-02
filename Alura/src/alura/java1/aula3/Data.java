@@ -5,6 +5,8 @@
  */
 package alura.java1.aula3;
 
+import java.sql.Date;
+
 /**
  *
  * @author JG40
@@ -19,7 +21,11 @@ public class Data {
         this.mes = mes;
         this.ano = ano;
     }
-    String formataData(){
-        return this.dia + "/" + this.mes + "/" + this.ano;
+    Date formataData(){
+        return valida(this.dia + "/" + this.mes + "/" + this.ano);
+    }
+    
+    private Date valida(String data){
+        return Date.valueOf(data);
     }
 }

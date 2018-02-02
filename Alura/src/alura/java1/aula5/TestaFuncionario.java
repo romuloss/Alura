@@ -16,6 +16,17 @@ public class TestaFuncionario {
         Funcionario fu = new Funcionario();
         fu.setSalario(5000+5);
         
+        System.out.println(Funcionario.getIdentificador());
+        
+          Funcionario fu1 = new Funcionario();
+          
+          System.out.println(Funcionario.getIdentificador());
+          
+           Funcionario fu2 = new Funcionario();
+          
+          System.out.println(Funcionario.getIdentificador());
+          
+        
         System.out.println(fu.getSalario() + " " + fu.getGanhoAnual());
         
         

@@ -15,7 +15,12 @@ public class Empresa {
     private String nome;
     private String cnpj;
            
+        
     private Funcionario[] funcionarios;
+    
+    public Empresa(int nFuncionarios){
+        this.funcionarios = new Funcionario[nFuncionarios];
+    }
     
     public void setNome(String nome){
         this.nome = nome;

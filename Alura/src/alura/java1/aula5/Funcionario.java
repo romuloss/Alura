@@ -19,6 +19,21 @@ public class Funcionario {
     private Data dataEntrada = new Data();
     private String RG;
 
+    private static int identificado=0;
+    
+    public  Funcionario(String nome){
+        this.nome = nome;
+        Funcionario.identificado++;
+    }
+    
+    public Funcionario(){  
+        this.identificado++;
+    }
+    
+    public static int getIdentificador(){
+        return Funcionario.identificado;
+    }
+    
     void recebeAumento(double aumento){
         salario += aumento;
     }
